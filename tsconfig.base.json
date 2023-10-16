@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@reusable-ui/core-ui": ["packages/core-ui/src/index.ts"],
-      "enhance-ui": ["packages/enhance-ui/src/index.ts"]
+      "@enhance-ui": ["packages/enhance-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

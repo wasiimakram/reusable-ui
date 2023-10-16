@@ -1,6 +1,10 @@
 {
-  "name": "@reusable-ui/core-ui",
-  "version": "0.0.1",
+  "name": "@emumba-ui/core-ui",
+  "version": "0.0.5",
+  "description": "Core UI",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./index.js",
   "types": "./index.d.ts",
   "exports": {
