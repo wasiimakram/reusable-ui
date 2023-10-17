@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import Checkbox from './checkbox';
+import SharedUi from './shared-ui';
 
-describe('Checkbox', () => {
+describe('SharedUi', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Checkbox />);
+    const { baseElement } = render(<SharedUi />);
     expect(baseElement).toBeTruthy();
   });
 });

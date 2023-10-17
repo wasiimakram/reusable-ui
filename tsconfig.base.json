@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@reusable-ui/core-ui": ["packages/core-ui/src/index.ts"],
-      "@enhance-ui": ["packages/enhance-ui/src/index.ts"]
+      "@emumba-ui/core-ui": ["packages/core-ui/src/index.ts"],
+      "@emumba-ui/shared-ui": ["packages/shared-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

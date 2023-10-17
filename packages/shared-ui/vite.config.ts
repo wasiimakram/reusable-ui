@@ -5,7 +5,7 @@ import * as path from 'path';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
-  cacheDir: '../../node_modules/.vite/enhance-ui',
+  cacheDir: '../../node_modules/.vite/shared-ui',
 
   plugins: [
     react(),
@@ -26,18 +26,18 @@ export default defineConfig({
   // See: https://vitejs.dev/guide/build.html#library-mode
   build: {
     entry: 'src/index.ts',
-    name: 'enhance-ui',
+    name: 'shared-ui',
     fileName: 'index',
     formats: ['es', 'cjs'],
     external: ['react', 'react-dom', 'react/jsx-runtime'],
     lib: {
       entry: 'src/index.ts',
-      name: 'enhance-ui',
+      name: 'shared-ui',
       fileName: 'index',
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: ["'react'", "'react-dom'", "'react/jsx-runtime'"],
+      external: ["'react'", "'react-dom'", "'react/jsx-runtime'", "'react-router-dom'", "'react-router'"],
     },
   },
 });

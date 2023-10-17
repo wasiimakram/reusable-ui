@@ -13,9 +13,19 @@ const Button: React.FC<ButtonProps> = (props) => {
   const { sx, ...restProps } = props;
 
   return (
-    <>
-      <MuiButton {...restProps} />
-    </>
+    <MuiButton
+      sx={{
+        color: (theme) => theme.palette.common.black,
+        fontWeight: 'fontWeightBold',
+        textTransform: 'none',
+        boxShadow: 'none',
+        '&:hover': {
+          boxShadow: 'none',
+        },
+        ...sx,
+      }}
+      {...restProps}
+    />
   );
 };
 
